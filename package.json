@@ -1,0 +1,23 @@
+{
+  "type": "module",
+  "name": "secondlinebot",
+  "version": "1.0.0",
+  "engines": {
+    "node": "14.0.0"
+  },
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "linebot": "^1.5.3",
+    "nodemon": "^2.0.3",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.5"
+  }
+}
