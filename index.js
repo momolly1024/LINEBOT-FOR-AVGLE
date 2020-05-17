@@ -26,17 +26,38 @@ bot.on('message', async (event) => {
       }
     } else if (event.message.text === 'AV女優') {
       for (let i = 0; i < sort.response.categories.length; i++) {
-        msg = sort.response.categories[0].category_url + '\n' + sort.response.categories[0].cover_url
+        msg = [{
+          type: 'text',
+          text: sort.response.categories[0].category_url,
+        }, {
+          type: 'image',
+          originalContentUrl: sort.response.categories[0].cover_url,
+          previewImageUrl: sort.response.categories[0].cover_url,
+        }]
       }
     } else if (event.message.text === '日本AV') {
       for (let i = 0; i < sort.response.categories.length; i++) {
-        msg = sort.response.categories[1].category_url + '\n' + sort.response.categories[1].cover_url
+        msg = [{
+          type: 'text',
+          text: sort.response.categories[1].category_url,
+        }, {
+          type: 'image',
+          originalContentUrl: sort.response.categories[1].cover_url,
+          previewImageUrl: sort.response.categories[1].cover_url,
+        }]
       }
     } else if (event.message.text === '無修正') {
       for (let i = 0; i < sort.response.categories.length; i++) {
-        msg = sort.response.categories[2].category_url + '\n' + sort.response.categories[2].cover_url
+        msg = [{
+          type: 'text',
+          text: sort.response.categories[2].category_url,
+        }, {
+          type: 'image',
+          originalContentUrl: sort.response.categories[2].cover_url,
+          previewImageUrl: sort.response.categories[2].cover_url,
+        }]
       }
-    } else if (event.message.text === '3') {
+    } else if (event.message.text === '少女') {
       for (let i = 0; i < sort.response.categories.length; i++) {
         msg = [{
           type: 'text',
@@ -46,7 +67,226 @@ bot.on('message', async (event) => {
           originalContentUrl: sort.response.categories[3].cover_url,
           previewImageUrl: sort.response.categories[3].cover_url,
         }]
-
+      }
+    } else if (event.message.text === '素人') {
+      for (let i = 0; i < sort.response.categories.length; i++) {
+        msg = [{
+          type: 'text',
+          text: sort.response.categories[4].category_url,
+        }, {
+          type: 'image',
+          originalContentUrl: sort.response.categories[4].cover_url,
+          previewImageUrl: sort.response.categories[4].cover_url,
+        }]
+      }
+    } else if (event.message.text === 'Anal') {
+      for (let i = 0; i < sort.response.categories.length; i++) {
+        msg = [{
+          type: 'text',
+          text: sort.response.categories[5].category_url,
+        }, {
+          type: 'image',
+          originalContentUrl: sort.response.categories[5].cover_url,
+          previewImageUrl: sort.response.categories[5].cover_url,
+        }]
+      }
+    } else if (event.message.text === '巨乳') {
+      for (let i = 0; i < sort.response.categories.length; i++) {
+        msg = [{
+          type: 'text',
+          text: sort.response.categories[6].category_url,
+        }, {
+          type: 'image',
+          originalContentUrl: sort.response.categories[6].cover_url,
+          previewImageUrl: sort.response.categories[6].cover_url,
+        }]
+      }
+    } else if (event.message.text === 'Cosplay') {
+      for (let i = 0; i < sort.response.categories.length; i++) {
+        msg = [{
+          type: 'text',
+          text: sort.response.categories[7].category_url,
+        }, {
+          type: 'image',
+          originalContentUrl: sort.response.categories[7].cover_url,
+          previewImageUrl: sort.response.categories[7].cover_url,
+        }]
+      }
+    } else if (event.message.text === '校生') {
+      for (let i = 0; i < sort.response.categories.length; i++) {
+        msg = [{
+          type: 'text',
+          text: sort.response.categories[8].category_url,
+        }, {
+          type: 'image',
+          originalContentUrl: sort.response.categories[8].cover_url,
+          previewImageUrl: sort.response.categories[8].cover_url,
+        }]
+      }
+    } else if (event.message.text === '人妻') {
+      for (let i = 0; i < sort.response.categories.length; i++) {
+        msg = [{
+          type: 'text',
+          text: sort.response.categories[9].category_url,
+        }, {
+          type: 'image',
+          originalContentUrl: sort.response.categories[9].cover_url,
+          previewImageUrl: sort.response.categories[9].cover_url,
+        }]
+      }
+    } else if (event.message.text === '熟女') {
+      for (let i = 0; i < sort.response.categories.length; i++) {
+        msg = [{
+          type: 'text',
+          text: sort.response.categories[10].category_url,
+        }, {
+          type: 'image',
+          originalContentUrl: sort.response.categories[10].cover_url,
+          previewImageUrl: sort.response.categories[10].cover_url,
+        }]
+      }
+    } else if (event.message.text === 'SM') {
+      for (let i = 0; i < sort.response.categories.length; i++) {
+        msg = [{
+          type: 'text',
+          text: sort.response.categories[11].category_url,
+        }, {
+          type: 'image',
+          originalContentUrl: sort.response.categories[11].cover_url,
+          previewImageUrl: sort.response.categories[11].cover_url,
+        }]
+      }
+    } else if (event.message.text === '中國') {
+      for (let i = 0; i < sort.response.categories.length; i++) {
+        msg = [{
+          type: 'text',
+          text: sort.response.categories[12].category_url,
+        }, {
+          type: 'image',
+          originalContentUrl: sort.response.categories[12].cover_url,
+          previewImageUrl: sort.response.categories[12].cover_url,
+        }]
+      }
+    } else if (event.message.text === '香港') {
+      for (let i = 0; i < sort.response.categories.length; i++) {
+        msg = [{
+          type: 'text',
+          text: sort.response.categories[13].category_url,
+        }, {
+          type: 'image',
+          originalContentUrl: sort.response.categories[13].cover_url,
+          previewImageUrl: sort.response.categories[13].cover_url,
+        }]
+      }
+    } else if (event.message.text === '日本') {
+      for (let i = 0; i < sort.response.categories.length; i++) {
+        msg = [{
+          type: 'text',
+          text: sort.response.categories[14].category_url,
+        }, {
+          type: 'image',
+          originalContentUrl: sort.response.categories[14].cover_url,
+          previewImageUrl: sort.response.categories[14].cover_url,
+        }]
+      }
+    } else if (event.message.text === '韓国') {
+      for (let i = 0; i < sort.response.categories.length; i++) {
+        msg = [{
+          type: 'text',
+          text: sort.response.categories[15].category_url,
+        }, {
+          type: 'image',
+          originalContentUrl: sort.response.categories[15].cover_url,
+          previewImageUrl: sort.response.categories[15].cover_url,
+        }]
+      }
+    } else if (event.message.text === '台湾') {
+      for (let i = 0; i < sort.response.categories.length; i++) {
+        msg = [{
+          type: 'text',
+          text: sort.response.categories[16].category_url,
+        }, {
+          type: 'image',
+          originalContentUrl: sort.response.categories[16].cover_url,
+          previewImageUrl: sort.response.categories[16].cover_url,
+        }]
+      }
+    } else if (event.message.text === '亞洲') {
+      for (let i = 0; i < sort.response.categories.length; i++) {
+        msg = [{
+          type: 'text',
+          text: sort.response.categories[17].category_url,
+        }, {
+          type: 'image',
+          originalContentUrl: sort.response.categories[17].cover_url,
+          previewImageUrl: sort.response.categories[17].cover_url,
+        }]
+      }
+    } else if (event.message.text === '金髪') {
+      for (let i = 0; i < sort.response.categories.length; i++) {
+        msg = [{
+          type: 'text',
+          text: sort.response.categories[18].category_url,
+        }, {
+          type: 'image',
+          originalContentUrl: sort.response.categories[18].cover_url,
+          previewImageUrl: sort.response.categories[18].cover_url,
+        }]
+      }
+    } else if (event.message.text === '3D') {
+      for (let i = 0; i < sort.response.categories.length; i++) {
+        msg = [{
+          type: 'text',
+          text: sort.response.categories[19].category_url,
+        }, {
+          type: 'image',
+          originalContentUrl: sort.response.categories[19].cover_url,
+          previewImageUrl: sort.response.categories[19].cover_url,
+        }]
+      }
+    } else if (event.message.text === 'VR') {
+      for (let i = 0; i < sort.response.categories.length; i++) {
+        msg = [{
+          type: 'text',
+          text: sort.response.categories[20].category_url,
+        }, {
+          type: 'image',
+          originalContentUrl: sort.response.categories[20].cover_url,
+          previewImageUrl: sort.response.categories[20].cover_url,
+        }]
+      }
+    } else if (event.message.text === '偶像') {
+      for (let i = 0; i < sort.response.categories.length; i++) {
+        msg = [{
+          type: 'text',
+          text: sort.response.categories[21].category_url,
+        }, {
+          type: 'image',
+          originalContentUrl: sort.response.categories[21].cover_url,
+          previewImageUrl: sort.response.categories[21].cover_url,
+        }]
+      }
+    } else if (event.message.text === '映画') {
+      for (let i = 0; i < sort.response.categories.length; i++) {
+        msg = [{
+          type: 'text',
+          text: sort.response.categories[22].category_url,
+        }, {
+          type: 'image',
+          originalContentUrl: sort.response.categories[22].cover_url,
+          previewImageUrl: sort.response.categories[22].cover_url,
+        }]
+      }
+    } else if (event.message.text === 'Anime') {
+      for (let i = 0; i < sort.response.categories.length; i++) {
+        msg = [{
+          type: 'text',
+          text: sort.response.categories[23].category_url,
+        }, {
+          type: 'image',
+          originalContentUrl: sort.response.categories[23].cover_url,
+          previewImageUrl: sort.response.categories[23].cover_url,
+        }]
       }
     } else if (event.message.type === 'sticker') {
       msg = [{
@@ -60,7 +300,7 @@ bot.on('message', async (event) => {
     } else if (event.message.type === 'image') {
       msg = '抱歉，我不能收你的照片:<'
     } else {
-      msg = '哈囉尼豪~~ 可以輸入\n1.【分類】查看影片分類，再輸入想要的【分類名稱】查看該分類的網址()，\n2.【有誰】查看有哪些女優，再輸入【女優名稱】查看該女優影片網址。\n謝謝大家<3'
+      msg = '哈囉尼豪~~ 可以輸入\n1. 【分類】查看影片分類，\n再輸入想要的【分類名稱】查看該分類的網址，\n2. 【有誰】查看有哪些女優，\n再輸入【女優名稱】查看該女優影片網址，\n 3. 【推薦】查看隨機推薦的一部片。\n謝謝大家<3'
     }
   } catch (error) {
     msg = '發生錯誤'
