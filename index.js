@@ -22,7 +22,7 @@ bot.on('message', async (event) => {
       }
     } else if (event.message.text === '分類') {
       for (let i = 0; i < sort.response.categories.length; i++) {
-        msg += sort.response.categories[i].name + '\n'
+        msg += sort.response.categories[i].shortname + '\n'
       }
     } else if (event.message.text === 'AV女優') {
       for (let i = 0; i < sort.response.categories.length; i++) {
@@ -32,15 +32,19 @@ bot.on('message', async (event) => {
       for (let i = 0; i < sort.response.categories.length; i++) {
         msg = sort.response.categories[1].category_url + '\n' + sort.response.categories[1].cover_url
       }
-    } else if (event.message.text === '2') {
+    } else if (event.message.text === '無修正') {
+      for (let i = 0; i < sort.response.categories.length; i++) {
+        msg = sort.response.categories[2].category_url + '\n' + sort.response.categories[2].cover_url
+      }
+    } else if (event.message.text === '3') {
       for (let i = 0; i < sort.response.categories.length; i++) {
         msg = [{
           type: 'text',
-          text: sort.response.categories[2].category_url,
+          text: sort.response.categories[3].category_url,
         }, {
           type: 'image',
-          originalContentUrl: sort.response.categories[2].cover_url,
-          previewImageUrl: sort.response.categories[2].cover_url,
+          originalContentUrl: sort.response.categories[3].cover_url,
+          previewImageUrl: sort.response.categories[3].cover_url,
         }]
 
       }
@@ -56,7 +60,7 @@ bot.on('message', async (event) => {
     } else if (event.message.type === 'image') {
       msg = '抱歉，我不能收你的照片:<'
     } else {
-      msg = '哈囉尼豪~~ 可以輸入\n1.【分類】查看影片分類，再輸入想要的【分類名稱】查看該分類的網址，\n2.【有誰】查看有哪些女優，再輸入【女優名稱】查看該女優影片網址。\n謝謝大家<3'
+      msg = '哈囉尼豪~~ 可以輸入\n1.【分類】查看影片分類，再輸入想要的【分類名稱】查看該分類的網址()，\n2.【有誰】查看有哪些女優，再輸入【女優名稱】查看該女優影片網址。\n謝謝大家<3'
     }
   } catch (error) {
     msg = '發生錯誤'
