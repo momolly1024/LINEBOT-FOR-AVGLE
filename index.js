@@ -14,17 +14,42 @@ bot.on('message', async (event) => {
   let msg = ''
   try {
     const data = await rp({ url: 'https://api.avgle.com/v1/collections/[1, 250]', json: true })
-    if (event.message.text === '1') {
+    const sort = await rp({ url: 'https://api.avgle.com/v1/categories', json: true })
+    if (event.message.text === '有誰') {
       for (let i = 0; i < data.response.collections.length; i++) {
         // movie += data.result[i].original_title
-        msg += data.response.collections[0].title + '\n'
+        msg += data.response.collections[i].title + '\n'
+      }
+    } else if (event.message.text === '分類') {
+      for (let i = 0; i < data.response.categories.length; i++) {
+        msg += data.response.categories[i].name + '\n'
+      }
+    } else if (event.message.text === 'AV女優') {
+      for (let i = 0; i < data.response.categories.length; i++) {
+        msg = data.response.categories[0].category_url + '\n' + data.response.categories[0].cover_url
+      }
+    } else if (event.message.text === '日本AV') {
+      for (let i = 0; i < data.response.categories.length; i++) {
+        msg = data.response.categories[1].category_url + '\n' + data.response.categories[1].cover_url
       }
     } else if (event.message.text === '2') {
-      for (let i = 0; i < data.response.collections.length; i++) {
-        msg += data.response.collections[1].JSON.stringify(title) + '\n'
+      for (let i = 0; i < data.response.categories.length; i++) {
+        msg = data.response.categories[2].category_url + '\n' + data.response.categories[2].cover_url
+
       }
+    } else if (event.message.type === 'sticker') {
+      msg = [{
+        type: 'text',
+        text: '不管怎樣，送你一個抱抱'
+      }, {
+        type: 'sticker',
+        packageId: '11537',
+        stickerId: '52002737'
+      }]
+    } else if (event.message.type === 'image') {
+      msg = '抱歉，我不能收你的照片:<'
     } else {
-      msg = '哈囉尼豪~~ \n討厭好難哦阿阿阿阿阿阿\n阿阿阿阿阿~~~~~'
+      msg = '哈囉尼豪~~ 可以輸入\n1.【分類】查看影片分類，再輸入想要的【分類名稱】查看該分類的網址，\n2.【有誰】查看有哪些女優，再輸入【女優名稱】查看該女優影片網址。\n謝謝大家<3'
     }
   } catch (error) {
     msg = '發生錯誤'
