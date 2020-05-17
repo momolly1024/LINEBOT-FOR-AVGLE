@@ -14,16 +14,14 @@ bot.on('message', event => {
   let msg = ''
   try {
     const data = rp({
-      uri: 'https://spreadsheets.google.com/feeds/list/1RdfgfU7Qx8D0oO4-rPZrLehVGKIfHhG-tq1-UbR5ohM/1/public/values?alt=json', json: true
+      uri: 'https://api.avgle.com/v1/collections/[1, 250]', json: true
     })
-    const clientId = userData.event[0].source.uerID
-    msg = data.feed.entry[0].gsx$name.$t
+    msg += data.response.collections[0].title
   } catch (error) {
     msg = '發生錯誤'
   }
-  event.reply(clientId)
+  event.reply(msg)
   console.log(msg)
-  console.log(clientId)
 })
 
 // 啟動
