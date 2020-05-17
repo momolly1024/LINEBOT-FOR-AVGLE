@@ -21,20 +21,20 @@ bot.on('message', async (event) => {
         msg += data.response.collections[i].title + '\n'
       }
     } else if (event.message.text === '分類') {
-      for (let i = 0; i < data.response.categories.length; i++) {
-        msg += data.response.categories[i].name + '\n'
+      for (let i = 0; i < sort.response.categories.length; i++) {
+        msg += sort.response.categories[i].name + '\n'
       }
     } else if (event.message.text === 'AV女優') {
-      for (let i = 0; i < data.response.categories.length; i++) {
-        msg = data.response.categories[0].category_url + '\n' + data.response.categories[0].cover_url
+      for (let i = 0; i < sort.response.categories.length; i++) {
+        msg = sort.response.categories[0].category_url + '\n' + sort.response.categories[0].cover_url
       }
     } else if (event.message.text === '日本AV') {
-      for (let i = 0; i < data.response.categories.length; i++) {
-        msg = data.response.categories[1].category_url + '\n' + data.response.categories[1].cover_url
+      for (let i = 0; i < sort.response.categories.length; i++) {
+        msg = sort.response.categories[1].category_url + '\n' + sort.response.categories[1].cover_url
       }
     } else if (event.message.text === '2') {
-      for (let i = 0; i < data.response.categories.length; i++) {
-        msg = data.response.categories[2].category_url + '\n' + data.response.categories[2].cover_url
+      for (let i = 0; i < sort.response.categories.length; i++) {
+        msg = sort.response.categories[2].category_url + '\n' + sort.response.categories[2].cover_url
 
       }
     } else if (event.message.type === 'sticker') {
