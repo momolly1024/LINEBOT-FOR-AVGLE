@@ -34,7 +34,14 @@ bot.on('message', async (event) => {
       }
     } else if (event.message.text === '2') {
       for (let i = 0; i < sort.response.categories.length; i++) {
-        msg = sort.response.categories[2].category_url + '\n' + sort.response.categories[2].cover_url
+        msg = [{
+          type: 'text',
+          text: sort.response.categories[2].category_url,
+        }, {
+          type: 'image',
+          originalContentUrl: sort.response.categories[2].cover_url,
+          previewImageUrl: sort.response.categories[2].cover_url,
+        }]
 
       }
     } else if (event.message.type === 'sticker') {
