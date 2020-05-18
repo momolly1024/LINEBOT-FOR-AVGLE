@@ -21,14 +21,15 @@ bot.on('message', async (event) => {
       for (let i = 0; i < data.response.collections.length; i++) {
         msg += data.response.collections[i].title + '\n'
       }
-    } else if (event.message.text === '隨機') {
+    } else if (event.message.text === '推薦') {
+      const rand = Math.floor((Math.random()*recommend.response.videos.length));
       for (let i = 0; i < recommend.response.videos.length; i++) {
         msg = [{
           type: 'text',
-          text: recommend.response.videos[5].title + '\n'
+          text: recommend.response.videos[rand].title + '\n'
         }, {
           type: 'text',
-          text: recommend.response.videos[5].video_url + '\n'
+          text: recommend.response.videos[rand].video_url + '\n'
         }]
         
       }
