@@ -308,8 +308,8 @@ bot.on('message', async (event) => {
           text: data.response.collections[0].category_url,
         }, {
           type: 'image',
-          originalContentUrl: sort.response.categories[0].cover_url,
-          previewImageUrl: sort.response.categories[0].cover_url,
+          originalContentUrl: data.response.collections[0].cover_url,
+          previewImageUrl: data.response.collections[0].cover_url,
         }]
       }
     } else if (event.message.type === 'sticker') {
