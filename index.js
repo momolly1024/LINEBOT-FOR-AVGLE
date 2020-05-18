@@ -23,7 +23,7 @@ bot.on('message', async (event) => {
       }
     } else if (event.message.text === '三上悠亜') {
       for (let i = 0; i < data.response.collections.length; i++) {
-        msg = `'https://avgle.com/search/videos/'+${三上悠亜}`
+        msg = data.response.collections[0].category_url
       }
     } else if (event.message.text === '推薦') {
       const rand = Math.floor((Math.random() * recommend.response.videos.length));
