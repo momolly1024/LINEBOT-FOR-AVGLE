@@ -21,6 +21,10 @@ bot.on('message', async (event) => {
       for (let i = 0; i < data.response.collections.length; i++) {
         msg += data.response.collections[i].title + '\n'
       }
+    } else if (event.message.text === '三上悠亜') {
+      for (let i = 0; i < data.response.collections.length; i++) {
+        msg = data.response.collections[0].collection_url
+      }
     } else if (event.message.text === '推薦') {
       const rand = Math.floor((Math.random() * recommend.response.videos.length));
       for (let i = 0; i < recommend.response.videos.length; i++) {
@@ -300,10 +304,6 @@ bot.on('message', async (event) => {
           originalContentUrl: sort.response.categories[23].cover_url,
           previewImageUrl: sort.response.categories[23].cover_url,
         }]
-      }
-    } else if (event.message.text === '三上悠亜') {
-      for (let i = 0; i < data.response.collections.length; i++) {
-        msg = data.response.collections[0].category_url
       }
     } else if (event.message.type === 'sticker') {
       msg = [{
