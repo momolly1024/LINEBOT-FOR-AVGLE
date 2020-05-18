@@ -303,14 +303,7 @@ bot.on('message', async (event) => {
       }
     } else if (event.message.text === '三上悠亜') {
       for (let i = 0; i < data.response.collections.length; i++) {
-        msg = [{
-          type: 'text',
-          text: data.response.collections[0].category_url,
-        }, {
-          type: 'image',
-          originalContentUrl: data.response.collections[0].cover_url,
-          previewImageUrl: data.response.collections[0].cover_url,
-        }]
+        msg = data.response.collections[0].category_url
       }
     } else if (event.message.type === 'sticker') {
       msg = [{
