@@ -16,13 +16,13 @@ bot.on('message', async (event) => {
     const data = await rp({ url: 'https://api.avgle.com/v1/collections/[1, 250]', json: true })
     const sort = await rp({ url: 'https://api.avgle.com/v1/categories', json: true })
     const recommend = await rp({ url: 'https://api.avgle.com/v1/videos/[1, 250]', json: true })
-    
+
     if (event.message.text === '有誰') {
       for (let i = 0; i < data.response.collections.length; i++) {
         msg += data.response.collections[i].title + '\n'
       }
     } else if (event.message.text === '推薦') {
-      const rand = Math.floor((Math.random()*recommend.response.videos.length));
+      const rand = Math.floor((Math.random() * recommend.response.videos.length));
       for (let i = 0; i < recommend.response.videos.length; i++) {
         msg = [{
           type: 'text',
@@ -31,7 +31,7 @@ bot.on('message', async (event) => {
           type: 'text',
           text: recommend.response.videos[rand].video_url + '\n'
         }]
-        
+
       }
     } else if (event.message.text === '分類') {
       for (let i = 0; i < sort.response.categories.length; i++) {
@@ -299,6 +299,17 @@ bot.on('message', async (event) => {
           type: 'image',
           originalContentUrl: sort.response.categories[23].cover_url,
           previewImageUrl: sort.response.categories[23].cover_url,
+        }]
+      }
+    } else if (event.message.text === '三上悠亜') {
+      for (let i = 0; i < data.response.collections.length; i++) {
+        msg = [{
+          type: 'text',
+          text: data.response.collections[0].category_url,
+        }, {
+          type: 'image',
+          originalContentUrl: sort.response.categories[0].cover_url,
+          previewImageUrl: sort.response.categories[0].cover_url,
         }]
       }
     } else if (event.message.type === 'sticker') {
