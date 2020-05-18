@@ -15,10 +15,22 @@ bot.on('message', async (event) => {
   try {
     const data = await rp({ url: 'https://api.avgle.com/v1/collections/[1, 250]', json: true })
     const sort = await rp({ url: 'https://api.avgle.com/v1/categories', json: true })
+    const recommend = await rp({ url: 'https://api.avgle.com/v1/videos/[1, 250]', json: true })
+    
     if (event.message.text === '有誰') {
       for (let i = 0; i < data.response.collections.length; i++) {
-        // movie += data.result[i].original_title
         msg += data.response.collections[i].title + '\n'
+      }
+    } else if (event.message.text === '隨機') {
+      for (let i = 0; i < recommend.response.videos.length; i++) {
+        msg = [{
+          type: 'text',
+          text: recommend.response.videos[5].title + '\n'
+        }, {
+          type: 'text',
+          text: recommend.response.videos[5].video_url + '\n'
+        }]
+        
       }
     } else if (event.message.text === '分類') {
       for (let i = 0; i < sort.response.categories.length; i++) {
@@ -189,7 +201,7 @@ bot.on('message', async (event) => {
           previewImageUrl: sort.response.categories[14].cover_url,
         }]
       }
-    } else if (event.message.text === '韓国') {
+    } else if (event.message.text === '韓國') {
       for (let i = 0; i < sort.response.categories.length; i++) {
         msg = [{
           type: 'text',
@@ -200,7 +212,7 @@ bot.on('message', async (event) => {
           previewImageUrl: sort.response.categories[15].cover_url,
         }]
       }
-    } else if (event.message.text === '台湾') {
+    } else if (event.message.text === '台灣') {
       for (let i = 0; i < sort.response.categories.length; i++) {
         msg = [{
           type: 'text',
