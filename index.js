@@ -24,6 +24,153 @@ bot.on('message', async (event) => {
     } else if (event.message.text === '三上悠亜') {
       let name = event.message.text;
       msg = `https://avgle.com/search/videos/${name}`
+    } else if (event.message.text === '高橋しょう子') {
+      let name = event.message.text;
+      msg = `https://avgle.com/search/videos/${name}`
+    } else if (event.message.text === '波多野結衣') {
+      let name = event.message.text;
+      msg = `https://avgle.com/search/videos/${name}`
+    } else if (event.message.text === '橋本ありな') {
+      let name = event.message.text;
+      msg = `https://avgle.com/search/videos/${name}`
+    } else if (event.message.text === '椎名そら') {
+      let name = event.message.text;
+      msg = `https://avgle.com/search/videos/${name}`
+    } else if (event.message.text === '上原亜衣') {
+      let name = event.message.text;
+      msg = `https://avgle.com/search/videos/${name}`
+    } else if (event.message.text === '丘咲エミリ') {
+      let name = event.message.text;
+      msg = `https://avgle.com/search/videos/${name}`
+    } else if (event.message.text === '大槻ひびき') {
+      let name = event.message.text;
+      msg = `https://avgle.com/search/videos/${name}`
+    } else if (event.message.text === '凰かなめ') {
+      let name = event.message.text;
+      msg = `https://avgle.com/search/videos/${name}`
+    } else if (event.message.text === '愛音まりあ') {
+      let name = event.message.text;
+      msg = `https://avgle.com/search/videos/${name}`
+    } else if (event.message.text === '栄川乃亜') {
+      let name = event.message.text;
+      msg = `https://avgle.com/search/videos/${name}`
+    } else if (event.message.text === '佐々木あき') {
+      let name = event.message.text;
+      msg = `https://avgle.com/search/videos/${name}`
+    } else if (event.message.text === '篠田あゆみ') {
+      let name = event.message.text;
+      msg = `https://avgle.com/search/videos/${name}`
+    } else if (event.message.text === '有賀ゆあ') {
+      let name = event.message.text;
+      msg = `https://avgle.com/search/videos/${name}`
+    } else if (event.message.text === '水野朝陽') {
+      let name = event.message.text;
+      msg = `https://avgle.com/search/videos/${name}`
+    } else if (event.message.text === '吉沢明歩') {
+      let name = event.message.text;
+      msg = `https://avgle.com/search/videos/${name}`
+    } else if (event.message.text === '紗倉まな') {
+      let name = event.message.text;
+      msg = `https://avgle.com/search/videos/${name}`
+    } else if (event.message.text === '姫川ゆうな') {
+      let name = event.message.text;
+      msg = `https://avgle.com/search/videos/${name}`
+    } else if (event.message.text === '西川ゆい') {
+      let name = event.message.text;
+      msg = `https://avgle.com/search/videos/${name}`
+    } else if (event.message.text === 'AIKA') {
+      let name = event.message.text;
+      msg = `https://avgle.com/search/videos/${name}`
+    } else if (event.message.text === '小西悠') {
+      let name = event.message.text;
+      msg = `https://avgle.com/search/videos/${name}`
+    } else if (event.message.text === '香椎りあ') {
+      let name = event.message.text;
+      msg = `https://avgle.com/search/videos/${name}`
+    } else if (event.message.text === 'マンコ図鑑') {
+      let name = event.message.text;
+      msg = `https://avgle.com/search/videos/${name}`
+    } else if (event.message.text === 'ミラー号') {
+      let name = event.message.text;
+      msg = `https://avgle.com/search/videos/${name}`
+    } else if (event.message.text === '麻生希') {
+      let name = event.message.text;
+      msg = `https://avgle.com/search/videos/${name}`
+    } else if (event.message.text === '葉山瞳') {
+      let name = event.message.text;
+      msg = `https://avgle.com/search/videos/${name}`
+    } else if (event.message.text === '飛鳥りん') {
+      let name = event.message.text;
+      msg = `https://avgle.com/search/videos/${name}`
+    } else if (event.message.text === 'RION') {
+      let name = event.message.text;
+      msg = `https://avgle.com/search/videos/${name}`
+    } else if (event.message.text === '椎名ゆな') {
+      let name = event.message.text;
+      msg = `https://avgle.com/search/videos/${name}`
+    } else if (event.message.text === 'JULIA') {
+      let name = event.message.text;
+      msg = `https://avgle.com/search/videos/${name}`
+    } else if (event.message.text === '天海つばさ') {
+      let name = event.message.text;
+      msg = `https://avgle.com/search/videos/${name}`
+    } else if (event.message.text === 'あやみ旬果') {
+      let name = event.message.text;
+      msg = `https://avgle.com/search/videos/${name}`
+    } else if (event.message.text === '若菜奈央') {
+      let name = event.message.text;
+      msg = `https://avgle.com/search/videos/${name}`
+    } else if (event.message.text === 'みほの') {
+      let name = event.message.text;
+      msg = `https://avgle.com/search/videos/${name}`
+    } else if (event.message.text === '碧しの') {
+      let name = event.message.text;
+      msg = `https://avgle.com/search/videos/${name}`
+    } else if (event.message.text === '麻里梨夏') {
+      let name = event.message.text;
+      msg = `https://avgle.com/search/videos/${name}`
+    } else if (event.message.text === '北山かんな') {
+      let name = event.message.text;
+      msg = `https://avgle.com/search/videos/${name}`
+    } else if (event.message.text === '篠崎みお') {
+      let name = event.message.text;
+      msg = `https://avgle.com/search/videos/${name}`
+    } else if (event.message.text === '希崎ジェシカ') {
+      let name = event.message.text;
+      msg = `https://avgle.com/search/videos/${name}`
+    } else if (event.message.text === '宮崎あや') {
+      let name = event.message.text;
+      msg = `https://avgle.com/search/videos/${name}`
+    } else if (event.message.text === 'S-Cute') {
+      let name = event.message.text;
+      msg = `https://avgle.com/search/videos/${name}`
+    } else if (event.message.text === '259LUXU') {
+      let name = event.message.text;
+      msg = `https://avgle.com/search/videos/${name}`
+    } else if (event.message.text === '折原ほのか') {
+      let name = event.message.text;
+      msg = `https://avgle.com/search/videos/${name}`
+    } else if (event.message.text === '羽田真里') {
+      let name = event.message.text;
+      msg = `https://avgle.com/search/videos/${name}`
+    } else if (event.message.text === '小向美奈子') {
+      let name = event.message.text;
+      msg = `https://avgle.com/search/videos/${name}`
+    } else if (event.message.text === '二階堂ゆり') {
+      let name = event.message.text;
+      msg = `https://avgle.com/search/videos/${name}`
+    } else if (event.message.text === '三島奈津子') {
+      let name = event.message.text;
+      msg = `https://avgle.com/search/videos/${name}`
+    } else if (event.message.text === '江波りゅう') {
+      let name = event.message.text;
+      msg = `https://avgle.com/search/videos/${name}`
+    } else if (event.message.text === '青山未来') {
+      let name = event.message.text;
+      msg = `https://avgle.com/search/videos/${name}`
+    } else if (event.message.text === '朝桐光') {
+      let name = event.message.text;
+      msg = `https://avgle.com/search/videos/${name}`
     } else if (event.message.text === '推薦') {
       const rand = Math.floor((Math.random() * recommend.response.videos.length));
       for (let i = 0; i < recommend.response.videos.length; i++) {
