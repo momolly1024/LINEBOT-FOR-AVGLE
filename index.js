@@ -22,7 +22,7 @@ bot.on('message', async (event) => {
         msg += data.response.collections[i].title + '\n'
       }
     } else if (event.message.text === '三上悠亜') {
-      let name = '三上悠亜';
+      let name = event.message.text;
       msg = `https://avgle.com/search/videos/${name}`
     } else if (event.message.text === '推薦') {
       const rand = Math.floor((Math.random() * recommend.response.videos.length));
