@@ -1,12 +1,6 @@
-# LINEBOT - AVGLE 片單查詢功能
+# LINEBOT - AVGLE 查詢功能
 ### 公開資料/文檔：https://avgle.github.io/doc/?utm_source=hacpai.com#authentication
-### linebot使用的API：
-#### 女優： https://api.avgle.com/v1/collections/[1, 250]
-#### 類別： https://api.avgle.com/v1/categories
-#### 所有影片: https://api.avgle.com/v1/videos/[1, 250]
 
-### 帳號：@967ilbgb  或點此連結 https://lin.ee/buW64fHx
-### 也可以掃描qrcode ![](https://i.imgur.com/e6ti6eo.png)
 
 ### 功能:
 
