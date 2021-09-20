@@ -1,20 +1,21 @@
 # LINEBOT - AVGLE 查詢功能
 ### 公開資料/文檔：https://avgle.github.io/doc/?utm_source=hacpai.com#authentication
 
+### lineBot帳號：@967ilbgb
 
-### 功能:
+### 功能：
 
 輸入
 
-「分類」:查看影片分類
+「分類」：查看影片分類
 
-「類別名稱」:搜尋想看的分類
+「類別名稱」：搜尋想看的分類
 
-「有誰」:查看有哪些女優
+「有誰」：查看有哪些女優
 
-「女優名字」:搜尋想看的女優
+「女優名字」：搜尋想看的女優
 
-「推薦」:查看隨機推薦的影片
+「推薦」：查看隨機推薦的影片
 
 
 ![](https://i.imgur.com/h05Wd9S.png)
