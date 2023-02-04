@@ -1,5 +1,4 @@
-# LINEBOT - AVGLE 查詢功能
-### 公開資料/文檔：https://avgle.github.io/doc/?utm_source=hacpai.com#authentication
+# LINEBOT - AVGLE 查詢功能( 2023/02/04 已更新server，可繼續使用 )
 
 ### lineBot帳號：@967ilbgb
 
@@ -24,4 +23,8 @@
 若是收到貼圖、照片、非指令文字，也會有對應提示 OuO!
 
 ![](https://i.imgur.com/MgNjODj.png)
+
+
+### 公開資料/文檔：https://avgle.github.io/doc/?utm_source=hacpai.com#authentication
+
 
